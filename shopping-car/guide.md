@@ -14,14 +14,15 @@
    		this.cartView();
 	},
 ```
-然后再创建`.cartView()`方法读取`cartData.json`文件中的数据；
+2. 然后再创建`.cartView()`方法读取`cartData.json`文件中的数据；
 再在页面中渲染我们所读取并存储在`productList`中的数据；
-	1. 计算总金额：
-	```
+
+3. 计算总金额：
+```
 	//首先，进行输入框数据的绑定：
 	<input type="text" value="0" disabled v-model="item.productQuantity">
 	//其次，计算总金额：用产品数量`item.productQuantity`乘以产品单价`item.productPrice`,注意不要写错了属性，否则会出错
-	```
+```
 ---
 
 #### vue过滤器的使用
